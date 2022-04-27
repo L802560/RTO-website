@@ -1,5 +1,4 @@
-//Validate that the fields of a blank form cannot be empty, and the numeric fields must have numeric values.
-function validateForm(){
+//Flora(Li Zifei)  Description:Fields that validate blank forms cannot be empty, and numeric fields must contain numeric values. Can open email links. It is possible to let the user fill in all fields and make sure that the user enters the appropriate values. Detect empty fields and prompt the user for a value, check for numeric fields, the input must be a numeric value.
 var name=document.myform.name.value;  
 var num=document.myform.num.value;  
 var message=document.myform.message.value; 
