@@ -1,0 +1,328 @@
+body {
+  background: #ccccff;
+  font-family: $base-font-family;
+  color: #222;
+}
+* {
+margin: 0;
+padding: 0;
+}
+.navbar {
+display: flex;
+align-items: center;
+justify-content: center;
+position: sticky;
+cursor: pointer;
+}
+.background {
+background: black;
+background-blend-mode: darken;
+background-size: cover;
+}
+.nav-list {
+width: 70%;
+display: flex;
+align-items: center;
+}
+.logo {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.logo img {
+width: 140px;
+}
+.nav-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+    overflow: hidden;
+}
+.nav-list li{
+  list-style: none;
+padding: 26px 30px;
+float: left;
+}
+.nav-a {
+  text-decoration: none;
+  padding:0.7rem;
+  display:block;
+  font-size:25px;
+}
+.nav-list li a {
+text-decoration: none;
+color: white;
+display: block;
+text-align: center;
+padding: 10px;
+}
+.nav-list li a:hover {
+color: grey;
+}
+.hoverable{
+  display:inline-block;
+  backface-visibility: hidden;
+  vertical-align: middle;
+  position:relative;
+  box-shadow: 0 0 1px rgba(0,0,0,0);
+  tranform: translateZ(0);
+  transition-duration: .3s;
+  transition-property:transform;
+}
+.hoverable:before{
+  position:absolute;
+  pointer-events: none;
+  z-index:-1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height:10px;
+  width:90%;
+  opacity:0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  /* W3C */
+  transition-duration: 0.3s;
+  transition-property: transform, opacity;
+}
+
+.hoverable:hover, .hoverable:active, .hoverable:focus{
+  transform: translateY(-5px);
+}
+.hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
+  opacity: 1;
+  transform: translateY(-5px);
+}
+.rightnav {
+width: 30%;
+text-align: right;
+}
+#search {
+padding: 5px;
+font-size: 17px;
+border: 2px solid grey;
+border-radius: 9px;
+}
+.btn-sm {
+padding: 6px 10px;
+vertical-align: middle;
+}
+.writer-img {
+-webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+-moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+float: center;
+width: 100px;
+height: 100px;
+}
+.content {
+padding: 40px;
+}
+h2{
+color: #000000;
+font-weight: 100;
+font-size: 35px;
+line-height: 50px;
+padding-bottom: 30px;
+text-align: left;
+width: 70%;
+Font-weight:bold; 
+}
+h3 {
+border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+color: #000000;
+font-weight: 100;
+font-size: 30px;
+line-height: 50px;
+padding-bottom: 30px;
+text-align: left;
+width: 70%;
+Font-weight:bold; 
+}
+h4 {
+border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+color: #000000;
+font-weight: 100;
+font-size: 30px;
+line-height: 50px;
+padding-bottom: 30px;
+text-align: center;
+width: 100%;
+Font-weight:bold; 
+}
+p{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size:24px;
+  font-family: Helvetica;
+}
+.caption {
+display: block;
+font-family: 'Playfair Display', serif;
+font-size: 34px;
+font-style: italic;
+line-height: 34px;
+margin-left: 20px;
+padding: 10px;
+position: relative;
+text-align: center;
+top: 50%;
+width: 90%;
+color: #000000;
+}
+.image {
+background-image: url("https://tse1-mm.cn.bing.net/th/id/OIP-C.Lx5ngcKxN_LiK7na2zdfbAHaFQ?pid=ImgDet&rs=1");
+background-size: cover;
+background-position: left;
+height: 800px;
+}
+.contact-parent{
+    background: #fff;
+    display:flex;
+    margin:80px 0;
+}
+.contact-child{
+    display:flex;
+    flex:1;
+    box-shadow:0px 0px 10px -2px rgba(0,0,0,0.75);
+}
+.child1{
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://cdn.pixabay.com/photo/2019/06/28/00/17/architecture-4303279_1280.jpg");
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    color:#fff;
+    padding:100px 0;
+}
+.child1 p{
+    padding-left:20%;
+    font-size:20px;
+    text-shadow:0px 0px 2px #000;
+}
+.child1 p span{
+    font-size:16px;
+    color:#9df2fd;
+}
+.child2{
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+.inside-contact{
+    width:90%;
+    margin:0 auto;
+}
+.inside-contact h2{
+    text-transform:uppercase;
+    text-align:center;
+    margin-top:50px;
+}
+.inside-contact h3{
+    text-align:center;
+    font-size:16px;
+    color:#0085e2;
+}
+.inside-contact input, .inside-contact textarea{
+    width:100%;
+    background-color:#eee;
+    border:1px solid rgba(0,0,0,0.48);
+    padding:5px 10px;
+    margin-bottom:20px;
+}
+.inside-contact input[type=submit]{
+    background-color:#000;
+    color:#fff;
+    transition:0.2s;
+    border:2px solid #000;
+    margin:30px 0;
+}
+.inside-contact input[type=submit]:hover{
+    background-color:#fff;
+    color:#000;
+    transition:0.2s;
+}
+@media screen and (max-width:991px){
+    .contact-parent{
+        display:block;
+        width:100%;
+    }
+    .child1{
+        display:none;
+    }
+    .child2{
+        background-image:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url("https://cdn.pixabay.com/photo/2019/06/28/00/17/architecture-4303279_1280.jpg");
+        background-size:cover;
+    }
+    .inside-contact input, .inside-contact textarea{
+        background-color:#fff;
+    }
+}
+.text-footer {
+text-align: center;
+padding: 30px 0;
+font-family: 'Ubuntu', sans-serif;
+display: flex;
+justify-content: center;
+color: white;
+}
+.text img {
+  float: right;
+}
+.texts img {
+  float: left;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 450px 300px;
+    grid-gap: 50px;
+    margin:0 auto;
+  text-align:center;
+    padding:24px;
+  font-size:22px;
+  font-weight:bold;
+}
+.box1,.box2,.box3{
+border: 2px solid white;
+  border-radius: 5px;
+  background:white;
+  
+}
+.title{
+    border: 2px solid #ff6666;
+  border-radius: 5px;
+  background:#ff6666;
+  font-size:24px;
+  height:40px;
+}
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover{
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+text-decoration: none;
+}
