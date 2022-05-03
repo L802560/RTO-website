@@ -43,6 +43,10 @@ function myFunction2() {
     }
 }
 
+function myFunction3() {
+  location.replace("https://l802560.github.io/student-parent/")
+}
+
 var slideIndex = 1;
 showDivs(slideIndex);
 
